@@ -1,0 +1,151 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  background-color: #f1f8f9;
+  min-height: 100vh;
+  /* padding: 40px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App .ant-card {
+  width: 100%;
+  /* max-width: 850px; */
+  min-width: 70rem;
+  margin-bottom: 20px;
+}
+
+.ant-form-inline .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.ant-list-items {
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.header-container{
+    background-color: #189AB4;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.body-container {
+  margin-top: 24px;
+}
+.menu-slider {
+  position: fixed;
+  width: 22px;
+  height: 70px;
+  background-color: #0884b7;
+  top: 40%;
+  left: -7px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header-container .app-detail {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+.header-container .app-detail span {
+  margin-right: 5px;
+}
+.header-container .app-detail .app-name {
+  margin-top: -5px;
+}
+.header-container .app-detail .breadcrum-container { 
+  border-left: 1px solid;
+  padding-left: 5px;
+}
+.header-container .app-detail .breadcrum-container {
+  font-size: 15px;
+}
+.header-container .app-detail .header-menu {
+  margin-right: 0;
+}
+.header-container .app-detail span svg {
+  font-size: 2.5rem;
+  padding-top: 5px;
+}
+.header-container .user-detail {
+  display: flex;
+  align-items: center;
+}
+.header-container .user-detail .user-name {
+    font-size: 16px;
+    margin-right: 15px;
+}
+.header-container .user-detail .user-settings, .header-container .user-detail .log-out  {
+  padding-top: 8px;
+  margin-right: 15px;
+}
+.header-container .user-detail .user-settings:hover, .header-container .user-detail .log-out:hover  { 
+  color: #05445E;
+  cursor: pointer;
+}
+
+
+.ant-row .ant-col-8 {
+  max-width: 19%;
+}
+
+.MuiPopover-paper {
+  max-height: calc(100% - 100px) !important;
+  top: 28px !important;
+  left: 300px !important;
+  overflow: unset !important;
+}
+
+.overlay-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aliceblue;
+  color: #484444;
+}
+ .overlay-header .overlay-header-logo {
+  margin: 3px 5px 0px 5px;
+ }
+ .overlay-header-arrow {
+  position: absolute;
+  right: 18px;
+  top: -15px;
+  color: aliceblue;
+ }
+.overlay-body {
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 450px;
+  padding: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
